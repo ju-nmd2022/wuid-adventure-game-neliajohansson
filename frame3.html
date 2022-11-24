@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A WINTER ADVENTURE</title>
+    <link rel="stylesheet" type="text/css" href="frame3.css" />
+    <script src="frame3.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <p class="paragraph1">
+        You arrive at a clearing in the forest and see that the light comes from
+        a small cabin. Just as you're about to knock on the door a man shows up
+        behind you with an anxious look on his face.
+      </p>
+    </div>
+    <a href="frame2.html"
+      ><button id="east-button" class="button2">WALK EAST</button></a
+    >
+    <a href="frame5.html"
+      ><button id="forest-button" class="button4">BACK TO THE FOREST</button></a
+    >
+
+    <picture>
+      <img
+        data-modal-target="#modal"
+        class="lumberjack-image"
+        src="images/lumberjack.svg"
+        id="lumberjack-image"
+      />
+    </picture>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="header">Lumberjack</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Hey there! I must have lost the key to my cabin while I was out in the woods. Have you seen them?<br /><br />
+        <button id="give-key" type="button">Hand him the key</button>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <picture>
+        <div class="map-image">
+            <img class="map-image" src="images/map.svg" id="map-image" />
+          </div>
+    <div class="container">
+        <p class="box">Your backpack:</p>
+        <img class="key-image2" src="images/key2.svg" id="key-image2" />
+        <!-- <img class="bag-image2" src="images/bag2.svg" id="bag-image2" /> -->
+        <img
+          class="map-image2"
+          src="images/map2.svg"
+          id="map-image2"
+        />
+  </body>
+</html>

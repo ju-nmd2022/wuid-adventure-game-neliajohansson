@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A WINTER ADVENTURE</title>
+    <link rel="stylesheet" type="text/css" href="frame2.css" />
+    <script src="frame2.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <p class="paragraph1">You arrive at a frozen river and realize there's no way around it. You have to cross it in order to get to your Grandma's house, but it's too wide to jump over and you're not sure if the ice could hold your weight.</p>
+    </div>
+
+    <a href="frame3.html"><button class="button2">BACK TO CABIN</button></a>
+    <a href="frame4.html"><button id ="river-button" class="button3">CROSS THE RIVER</button></a>
+    
+    <picture>
+        <img class="ice-image"
+          src="images/ice.svg"
+          id="ice-image">
+      </picture>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="header">Is the ice thick enough?</div>
+          <button id="close-button" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <button id="try-ice" type="button">Try</button>
+          <div id="result"></div>
+        </div>
+      </div>
+
+      <div class="bag-image">
+        <img class="bag-image" src="images/bag.svg" id="bag-image" />
+      </div>
+
+        <div class="container">
+            <p class="box">Your backpack:</p>
+            <img class="bag-image2" src="images/bag2.svg" id="bag-image2" />
+            <img
+              class="map-image2"
+              src="images/map2.svg"
+              id="map-image2"
+            />
+  </body>
+</html>

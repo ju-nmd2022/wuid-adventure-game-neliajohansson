@@ -1,0 +1,85 @@
+body,
+html {
+  background-image: url(images/roberto-gatto-sh-01blockout2-copia.jpg);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* //image by https://www.artstation.com/robertogatto */
+
+.content {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  /* transform: translate(-50%, -50%); */
+}
+
+.paragraph1 {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  text-align: center;
+}
+
+.button4 {
+  text-align: center;
+  border: none;
+  width: 250px;
+  padding: 1rem;
+  margin: 3%;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button4:hover {
+  background-color: rgb(70, 110, 157);
+  color: white;
+}
+.key-image2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 5%;
+  left: 34%;
+  cursor: pointer;
+}
+
+/* .bag-image2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 5%;
+  left: 77%;
+  cursor: pointer;
+}
+
+.map-image2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 5%;
+  left: 55%;
+  cursor: pointer;
+} */
+.container {
+  background-color: white;
+  bottom: 0%;
+  left: 0%;
+  position: fixed;
+  width: 350px;
+  padding: 1rem;
+}
+.box {
+  padding-inline-start: 2rem;
+}

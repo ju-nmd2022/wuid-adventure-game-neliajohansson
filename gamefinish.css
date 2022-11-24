@@ -1,0 +1,40 @@
+body,
+html {
+  background-image: url(images/elizaveta-lebedeva-hogsmeade.jpg);
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* //image by https://www.artstation.com/lady_li */
+
+.paragraph1 {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button7 {
+  text-align: center;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.button7:hover {
+  background-color: rgb(70, 110, 157);
+  color: white;
+}
