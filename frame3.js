@@ -7,13 +7,7 @@ const mapImageBackpack = document.getElementById("map-image2");
 const eastButton = document.getElementById("east-button");
 
 checkLocalStorage();
-// modal.style.transform = 'translate(-50%, -50%) scale(1)';
 function checkLocalStorage() {
-  if (localStorage.getItem("map")) {
-    mapImage.style.visibility = "visible";
-  } else {
-    mapImage.style.visibility = "hidden";
-  }
   if (localStorage.getItem("map")) {
     mapImageBackpack.style.visibility = "visible";
     mapImage.style.visibility = "hidden";

@@ -19,7 +19,6 @@ html {
   left: 0%;
   padding-bottom: 10px;
   padding-top: 10px;
-  /* transform: translate(-50%, -50%); */
 }
 
 .paragraph1 {
@@ -81,67 +80,6 @@ html {
   bottom: 5%;
   left: 34%;
   cursor: pointer;
-}
-
-.bag-image2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  bottom: 5%;
-  left: 77%;
-  cursor: pointer;
-}
-
-.map-image2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  bottom: 5%;
-  left: 55%;
-  cursor: pointer;
-}
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid black;
-  z-index: 10;
-  background-color: white;
-  width: 500px;
-  max-width: 80%;
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-
-.modal-header .header {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.modal-body {
-  padding: 10px 15px;
 }
 
 .container {

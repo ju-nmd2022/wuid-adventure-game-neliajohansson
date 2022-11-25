@@ -19,7 +19,6 @@ html {
   left: 0%;
   padding-bottom: 10px;
   padding-top: 10px;
-  /* transform: translate(-50%, -50%); */
 }
 
 .paragraph1 {
@@ -148,15 +147,6 @@ html {
   position: absolute;
   bottom: 5%;
   left: 34%;
-  cursor: pointer;
-}
-
-.bag-image2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  bottom: 5%;
-  left: 77%;
   cursor: pointer;
 }
 

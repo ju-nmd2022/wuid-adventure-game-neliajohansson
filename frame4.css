@@ -19,7 +19,6 @@ html {
   left: 0%;
   padding-bottom: 10px;
   padding-top: 10px;
-  /* transform: translate(-50%, -50%); */
 }
 
 .paragraph1 {
@@ -64,24 +63,22 @@ html {
   color: #ffffff;
 }
 
-.draco-image {
-  width: 500px;
-  height: 500px;
+.button8 {
+  text-align: center;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  margin: 3%;
   position: fixed;
-  bottom: 0%;
-  /* top: 60%; */
-  left: 55%;
+  top: 50%;
+  right: 0%;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
-.gift-image {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  bottom: 25%;
-  /* top: 60%; */
-  left: 29%;
-  cursor: pointer;
+.button8:hover {
+  background-color: rgb(70, 110, 157);
+  color: #ffffff;
 }
 
 .modal {
@@ -125,15 +122,6 @@ html {
 
 .modal-body {
   padding: 10px 15px;
-}
-
-.key-image2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  bottom: 5%;
-  left: 34%;
-  cursor: pointer;
 }
 
 .bag-image2 {

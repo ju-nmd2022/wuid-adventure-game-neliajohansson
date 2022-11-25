@@ -9,11 +9,6 @@ checkLocalStorage();
 
 function checkLocalStorage() {
   if (localStorage.getItem("bag")) {
-    bagImage.style.visibility = "visible";
-  } else {
-    bagImage.style.visibility = "hidden";
-  }
-  if (localStorage.getItem("bag")) {
     bagImageBackpack.style.visibility = "visible";
     bagImage.style.visibility = "hidden";
   } else {
@@ -84,77 +79,3 @@ function fnClick(event) {
 }
 
 button.addEventListener("click", fnClick);
-
-// const modal = document.getElementById("modal");
-// const closeButton = document.getElementById("close-button");
-// const bagImage = document.getElementById("bag-image");
-// const bagImageBackpack = document.getElementById("bag-image2");
-// const riverButton = document.getElementById("river-button");
-// const iceImage = document.getElementById("ice-image");
-
-// checkLocalStorage();
-// modal.style.transform = "translate(-50%, -50%) scale(1)";
-// function checkLocalStorage() {
-//   if (localStorage.getItem("bag")) {
-//     bagImageBackpack.style.visibility = "visible";
-//     bagImage.style.visibility = "hidden";
-//   } else {
-//     bagImage.style.visibility = "visible";
-//     bagImageBackpack.style.visibility = "hidden";
-//   }
-//   if (localStorage.getItem("bag")) {
-//     mapImageBackpack.style.visibility = "visible";
-//     eastButton.style.visibility = "visable";
-//   } else {
-//     mapImageBackpack.style.visibility = "hidden";
-//     eastButton.style.visibility = "hidden";
-//   }
-// }
-
-// modal.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     const modal = document.querySelector(button.dataset.modalTarget);
-//     openModal(modal);
-//   });
-// });
-
-// closeButton.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     riverButton.style.display = "visible";
-//     const modal = button.closest(".modal");
-//     closeButton(modal);
-//   });
-// });
-
-// function modal(modal) {
-//   if (modal == null) return;
-//   modal.classList.add("active");
-// }
-
-// function closeButton(modal) {
-//   if (modal == null) return;
-//   modal.classList.remove("active");
-// }
-
-// let button = document.getElementById("try-ice");
-// let result = document.getElementById("result");
-
-// function fnClick(event) {
-//   let num = Math.random();
-
-//   if (num < 0.3) {
-//     result.innerHTML = "The ice is thick enough, you can cross it safely!";
-//     riverButton.style.visibility = "visible";
-//   } else {
-//     result.innerHTML = "Oh no, the ice is breaking! Try again somewhere else.";
-//     riverButton.style.visibility = "hidden";
-//   }
-// }
-
-// button.addEventListener("click", fnClick);
-
-// bagImage.addEventListener("click", (event) => {
-//   bagImage.style.display = "none";
-//   localStorage.setItem("bag", true);
-//   checkLocalStorage();
-// });

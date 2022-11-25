@@ -1,53 +1,49 @@
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const openModalButtons = document.querySelectorAll("[data-modal-target]");
+const closeModalButtons = document.querySelectorAll("[data-close-button]");
+const feedButton = document.getElementById("feed-button");
+const villageButton = document.getElementById("village-button");
+const bagImageBackpack = document.getElementById("bag-image2");
 
-openModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal)
-    })
-})
+checkLocalStorage();
+function checkLocalStorage() {
+  if (localStorage.getItem("bag")) {
+    feedButton.style.visibility = "visible";
+  } else {
+    villageButton.style.visibility = "hidden";
+  }
+  if (localStorage.getItem("village")) {
+    feedButton.style.visibility = "hidden";
+  } else {
+    villageButton.style.visibility = "visable";
+  }
+}
 
-closeModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal')
-        closeModal(modal)
-    })
-})
+feedButton.addEventListener("click", (event) => {
+  feedButton.style.display = "none";
+  localStorage.setItem("bag", true);
+  checkLocalStorage();
+});
+
+openModalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+closeModalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = button.closest(".modal");
+    closeModal(modal);
+  });
+});
 
 function openModal(modal) {
-    if (modal == null) return
-    modal.classList.add('active')
+  if (modal == null) return;
+  modal.classList.add("active");
 }
 
 function closeModal(modal) {
-    if (modal == null) return
-    modal.classList.remove('active')
-};
-//https://www.youtube.com/watch?v=MBaw_6cPmAw
-
-// function myFunction() {
-//     let text;
-//     let person = prompt("What building has the most stories?", "");
-//     if (person == null || answer == "") {
-//       text = "";
-//     } else {
-//       text = "Hello " + answer + "! How are you today?";
-//     }
-//     document.getElementById("demo").innerHTML = text;
-//   }
-
-//   let num = Math.random();
-
-// if (num < 0.5) {
-//   console.log("HEAD");
-// } else {
-//   console.log("TAIL");
-// }
-
-// const coinFlipNumber = Math.floor(Math.random() * 2);
-// if (coinFlipNumber === 0) {
-//   console.log("Head");
-// } else if (coinFlipNumber === 1) {
-//   console.log("Tail");
-// }
+  if (modal == null) return;
+  modal.classList.remove("active");
+}
