@@ -1,3 +1,4 @@
+// The following 27 lines of code were added and adapted by the help of classmates Ida Olsson and Isa Dejevik Schröder
 const keyImage = document.getElementById("key-image");
 const keyImageBackpack = document.getElementById("key-image2");
 const lightButton = document.getElementById("to-light-button");

@@ -1,3 +1,4 @@
+// The following 81 lines of code were added and adapted by the help of classmates Ida Olsson and Isa Dejevik Schröder
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const iceImage = document.getElementById("ice-image");
