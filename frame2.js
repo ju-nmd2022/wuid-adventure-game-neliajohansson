@@ -73,7 +73,7 @@ function fnClick(event) {
   if (num < 0.6) {
     result.innerHTML = "The ice is thick enough, you can cross it safely!";
     riverButton.style.visibility = "visible";
-  } else {
+  } else if (num >= 0.6) {
     result.innerHTML = "Oh no, the ice is breaking! Try again somewhere else.";
     riverButton.style.visibility = "hidden";
   }
